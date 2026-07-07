@@ -5,15 +5,15 @@ export const CONFIG = {
   // App Download Links
   downloads: {
     customer: {
-      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/blinko-customer.apk", // Served from GitHub Releases
+      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/Blinko.apk", // Served from GitHub Releases
       playStoreUrl: "#" // Replace with real Google Play Store link for customer
     },
     vendor: {
-      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/blinko-vendor.apk", // Served from GitHub Releases
+      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/Blinko.V.apk", // Served from GitHub Releases
       playStoreUrl: "#" // Replace with real Google Play Store link for vendor
     },
     delivery: {
-      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/blinko-delivery.apk", // Served from GitHub Releases
+      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/Blinko.D.apk", // Served from GitHub Releases
       playStoreUrl: "#" // Replace with real Google Play Store link for delivery
     }
   },
