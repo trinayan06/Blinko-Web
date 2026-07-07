@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #E8622A;
+  --color-primary-light: #F4845F;
+  --color-primary-dark: #B83F15;
+  --color-primary-soft: #FFF3EE;
+
+  --color-neutral-dark: #1A1A1A;
+  --color-neutral-light: #FFF8F5;
+
+  --font-poppins: "Poppins", sans-serif;
+
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 25s linear infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px; /* floating navbar offset spacing */
+  }
+  body {
+    @apply bg-neutral-light text-neutral-dark antialiased selection:bg-primary/20 selection:text-primary;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.stack-section {
+  position: sticky;
+  top: 76px; /* directly below floating navbar spacing */
+  box-shadow: 0 -12px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 32px 32px 0 0;
+  min-height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-clip: padding-box;
+  will-change: transform;
+}
+
+@media (min-width: 768px) {
+  .stack-section {
+    justify-content: center;
+  }
+}
+
+/* Desktop-only stacking: used on intro/feature sections that
+   are too tall to stack cleanly on narrow mobile viewports */
+@media (min-width: 768px) {
+  .stack-section-desktop {
+    position: sticky;
+    top: 76px;
+    box-shadow: 0 -12px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 32px 32px 0 0;
+    min-height: calc(100vh - 76px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-clip: padding-box;
+    will-change: transform;
+  }
+}
