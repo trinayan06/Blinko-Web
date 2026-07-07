@@ -5,15 +5,15 @@ export const CONFIG = {
   // App Download Links
   downloads: {
     customer: {
-      apkUrl: "https://phochhcgggsbczfytyuw.supabase.co/storage/v1/object/public/apks/blinko-customer.apk", // Served from Supabase Storage
+      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/blinko-customer.apk", // Served from GitHub Releases
       playStoreUrl: "#" // Replace with real Google Play Store link for customer
     },
     vendor: {
-      apkUrl: "https://phochhcgggsbczfytyuw.supabase.co/storage/v1/object/public/apks/blinko-vendor.apk", // Served from Supabase Storage
+      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/blinko-vendor.apk", // Served from GitHub Releases
       playStoreUrl: "#" // Replace with real Google Play Store link for vendor
     },
     delivery: {
-      apkUrl: "https://phochhcgggsbczfytyuw.supabase.co/storage/v1/object/public/apks/blinko-delivery.apk", // Served from Supabase Storage
+      apkUrl: "https://github.com/trinayan06/Blinko-Web/releases/download/apk-downloads/blinko-delivery.apk", // Served from GitHub Releases
       playStoreUrl: "#" // Replace with real Google Play Store link for delivery
     }
   },
