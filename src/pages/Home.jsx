@@ -248,7 +248,6 @@ export default function Home() {
           muted
           loop
           playsInline
-          poster="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1920"
           className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
         >
           <source src="/videos/blinko-video.mp4" type="video/mp4" />
@@ -260,7 +259,6 @@ export default function Home() {
           muted
           loop
           playsInline
-          poster="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800"
           className="absolute inset-0 w-full h-full object-cover z-0 md:hidden"
         >
           <source src="/videos/mobile-video.mp4" type="video/mp4" />
